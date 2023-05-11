@@ -34,6 +34,71 @@ body li {
   list-style: none;
 }
 
+.aboutme {
+  display: flex;
+  gap: 40px;
+  background-color: black;
+  color: white;
+  padding: 4rem 0;
+  filter: grayscale(100);
+  justify-content: center;
+  border-top: 1.5px solid grey;
+  border-bottom: 1.5px solid red;
+}
+
+.bio p {
+  max-width: 450px;
+  color: rgb(199, 199, 199);
+}
+
+.stats {
+  display: flex;
+  margin-top: 20px;
+  gap: 100px;
+}
+.stats .count {
+  font-weight: bold;
+}
+.stats .stat-title {
+  font-size: small;
+  margin-top: 6px;
+  color: rgb(199, 199, 199);
+}
+
+.blogspot {
+  color: white;
+  background-color: black;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.posts-wrapper {
+  display: flex;
+  gap: 15px;
+  padding: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-grid {
+  padding: 10px;
+}
+.post-grid:hover {
+  outline: 1px solid white;
+}
+.post-grid img {
+  width: 350px;
+}
+.post-grid img:hover {
+  scale: 1.01;
+}
+.post-grid p {
+  max-width: 350px;
+}
+.post-grid .readmore {
+  cursor: pointer;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -43,6 +108,7 @@ header {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  background-blend-mode: lighten;
   background-color: rgb(143, 148, 168);
   height: 600px;
 }
@@ -62,4 +128,169 @@ header .skills {
 header ul {
   display: flex;
   gap: 20px;
+  font-weight: bold;
+}
+header ul a {
+  color: black;
+}
+header .color-w {
+  color: white;
+}
+
+.portfolio_sect {
+  padding: 2rem 4rem;
+  background-color: black;
+  color: white;
+}
+
+.tabs {
+  display: flex;
+  margin-top: 20px;
+  padding: 20px 50px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.tabs .tab {
+  padding: 0 30px 15px;
+  cursor: pointer;
+}
+.tabs .tab:active {
+  border-bottom: 1px solid red;
+}
+
+.port-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+.port-imgs .img-1 {
+  max-width: 30%;
+}
+.port-imgs .img-1 img {
+  max-width: 100%;
+  height: 100%;
+}
+.port-imgs .img-1 img:hover {
+  scale: 1.01;
+  cursor: crosshair;
+}
+.port-imgs .img-grp2 {
+  max-width: 65%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.port-imgs .img-grp2 img {
+  max-width: 100%;
+}
+.port-imgs .img-grp2 img:hover {
+  scale: 1.01;
+  cursor: crosshair;
+}
+
+.services {
+  color: white;
+  background-color: black;
+  padding: 6rem 2rem;
+  border-top: 1px solid gray;
+}
+.services h3 {
+  margin: 0 auto;
+}
+.services p {
+  max-width: 950px;
+  font-size: small;
+}
+.services .pricing {
+  outline: 0.5px solid white;
+  width: 200px;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.package-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.package {
+  outline: 1px solid white;
+  padding: 3rem 50px;
+  line-height: 25px;
+  justify-content: center;
+}
+.package .price {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.package .pack-desc {
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+.package .offer1 {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.book-now {
+  padding: 10px 20px;
+  margin-top: 15px;
+  background-color: transparent;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.book-now:hover {
+  border: 1px solid red;
+}
+
+.reviews {
+  background-color: black;
+  color: white;
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.reviews .rev-cap {
+  color: red;
+  font-size: medium;
+}
+
+.rev-block {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  justify-content: center;
+}
+.rev-block .left-arrow-btn, .rev-block .right-arrow-btn {
+  cursor: pointer;
+  background-color: gray;
+  padding: 15px;
+  border-radius: 70%;
+}
+
+.review-wrapper {
+  text-align: left;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+  color: black;
+}
+.review-wrapper h2 {
+  font-size: medium;
+}
+.review-wrapper p {
+  max-width: 300px;
+  font-size: small;
+}
+.review-wrapper .seemore {
+  color: red;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

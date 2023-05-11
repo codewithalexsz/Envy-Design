@@ -29,5 +29,13 @@ header {
     ul{
         display: flex;
         gap: 20px;
+        font-weight: bold;
+        a {
+            color: black;
+        }
+    }
+
+    .color-w {
+        color: white;
     }
 }

@@ -1,0 +1,39 @@
+
+
+
+.blogspot{
+    color: white;
+    background-color: black;
+    padding: 6rem 0;
+    text-align: center;
+    
+}
+
+.posts-wrapper {
+    display: flex;
+    gap: 15px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    // outline: 1px solid white;
+}
+
+.post-grid {
+    padding: 10px;
+    &:hover {
+        outline: 1px solid white;
+    }
+    img {
+        width: 350px;
+        &:hover {
+            scale: 1.01;
+        }
+    }
+    p {
+        max-width: 350px;
+        // text-align: left;
+    }
+    .readmore {
+        cursor: pointer;
+    }
+}

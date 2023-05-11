@@ -1,0 +1,63 @@
+
+.services {
+    color: white;
+    background-color: black;
+    padding: 6rem 2rem;
+    border-top: 1px solid gray;
+h3{
+    margin: 0 auto;
+}
+    p{
+        max-width: 950px;
+        font-size: small;
+    }
+    .pricing {
+        outline: 0.5px solid white;
+        width: 200px;
+        text-align: center;
+        margin: 50px auto;
+    }
+}
+
+.package-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.package {
+    outline: 1px solid white;
+    padding: 3rem 50px;
+    line-height: 25px;
+
+    justify-content: center;
+
+    .price {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .pack-desc{
+        max-width: 250px;
+        margin-bottom: 10px;
+
+    }
+    .offer1 {
+        display: flex;
+        gap: 10px;
+        margin: 10px 0;
+    }
+}
+
+.book-now{
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: transparent;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid red;
+    }
+}
