@@ -1,0 +1,33 @@
+
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5rem 2rem;
+    justify-content: center;
+    // margin: 0 auto;
+
+    .foot-wrapper{
+
+        // outline: 1px solid red;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .f-logo{
+        max-width: 100px;
+        line-height: 1.3rem;
+        letter-spacing: 3px;
+        margin: 5px;
+        font-weight: bold;
+        // margin: 0 auto;
+    }
+    p{
+        font-size: small;
+        max-width: 700px;
+        // margin: 0 auto;
+    }
+    .socials{
+        display: flex;
+        gap: 15px;
+    }
+}

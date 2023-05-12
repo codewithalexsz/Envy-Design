@@ -18,6 +18,9 @@
         
         padding: 0 30px 15px;
         cursor: pointer;
+        &:hover {
+            border-bottom: 1px solid rgb(161, 155, 155);
+        }
         &:active {
             border-bottom: 1px solid red;
         }

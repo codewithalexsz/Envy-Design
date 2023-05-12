@@ -10,6 +10,7 @@ h3{
     p{
         max-width: 950px;
         font-size: small;
+        margin-bottom: 30px;
     }
     .pricing {
         outline: 0.5px solid white;
@@ -34,8 +35,14 @@ h3{
 
     justify-content: center;
 
+    &:hover {
+        outline: 2px dashed grey;
+        scale: 1.01;
+    }
+
     .price {
         font-size: 25px;
+        margin-top: 10px;
         margin-bottom: 20px;
     }
     .pack-desc{
