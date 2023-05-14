@@ -27,6 +27,12 @@
         background-color: gray;
         padding: 15px;
         border-radius: 70%;
+        @include devices (mobile) {
+            .left-arrow-btn, .right-arrow-btn {
+                display: none;
+                overflow: hidden;
+            }
+        }
     }
 }
 
@@ -41,10 +47,7 @@
 
     @include devices (mobile) {
         flex-direction: column;
-        .left-arrow-btn, .right-arrow-btn {
-            display: none;
-            overflow: hidden;
-        }
+        
     }
     h2 {
         font-size: medium;

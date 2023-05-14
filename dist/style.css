@@ -474,6 +474,12 @@ footer .socials {
   padding: 15px;
   border-radius: 70%;
 }
+@media only screen and (max-width: 767px) {
+  .rev-block .left-arrow-btn .left-arrow-btn, .rev-block .left-arrow-btn .right-arrow-btn, .rev-block .right-arrow-btn .left-arrow-btn, .rev-block .right-arrow-btn .right-arrow-btn {
+    display: none;
+    overflow: hidden;
+  }
+}
 
 .review-wrapper {
   text-align: left;
@@ -487,10 +493,6 @@ footer .socials {
 @media only screen and (max-width: 767px) {
   .review-wrapper {
     flex-direction: column;
-  }
-  .review-wrapper .left-arrow-btn, .review-wrapper .right-arrow-btn {
-    display: none;
-    overflow: hidden;
   }
 }
 .review-wrapper h2 {
