@@ -1,4 +1,4 @@
-
+@use '../rulesets/' as *;
 
 
 .aboutme {
@@ -6,12 +6,20 @@
     gap: 40px;
     background-color: black;
     color: white;
-    padding: 4rem 0;
+    padding: 4rem 1.5rem;
     // margin-bottom: 40px;
     filter: grayscale(100);
     justify-content: center;
     border-top: 1.5px solid grey;
     border-bottom: 1.5px solid red;
+
+    @include devices (mobile) {
+        flex-direction: column-reverse;
+        align-items: center;
+        .bio > h1 {
+            text-align: center;
+        }
+    }
 }
 
 .bio p {
@@ -23,6 +31,11 @@
     display: flex;
     margin-top: 20px;
     gap: 100px;
+    @include devices (mobile) {
+        gap: 30px;
+        margin-top: 40px;
+        justify-content: space-evenly;
+    }
     .count {
         font-weight: bold;
     }

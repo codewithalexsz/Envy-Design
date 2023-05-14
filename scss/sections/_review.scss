@@ -1,3 +1,5 @@
+@use '../rulesets/' as *;
+
 
 
 .reviews {
@@ -36,6 +38,13 @@
     border-radius: 5px;
     background-color: whitesmoke;
     color: black;
+
+    @include devices (mobile) {
+        flex-direction: column;
+        .left-arrow-btn, .right-arrow-btn {
+            display: none;
+        }
+    }
     h2 {
         font-size: medium;
     }

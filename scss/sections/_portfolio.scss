@@ -1,4 +1,4 @@
-
+@use '../rulesets/' as *;
 
 
 .portfolio_sect {
@@ -10,7 +10,7 @@
 .tabs {
     display: flex;
     margin-top: 20px;
-    padding: 20px 50px;
+    padding: 20px 15px;
     margin-bottom: 20px;
     justify-content: space-between;
     // outline: 1px solid brown;
@@ -25,6 +25,15 @@
             border-bottom: 1px solid red;
         }
     }
+
+    @include devices (mobile) {
+        padding: 10px 15px;
+        gap: 15px;
+        font-size: 12px;
+        .tab {
+            padding: 0 15px 10px;
+        }
+    }
 }
 
 .port-imgs {
@@ -32,6 +41,15 @@
     flex-wrap: wrap;
     gap: 7px;
     // outline:  1px solid brown;
+
+    @include devices (mobile) {
+        flex-direction: column;
+        .img-1, .img-grp2{
+            max-width: 100% !important;
+        }
+    }
+
+
     .img-1  {
         max-width: 30%;
         img {

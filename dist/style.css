@@ -39,11 +39,20 @@ body li {
   gap: 40px;
   background-color: black;
   color: white;
-  padding: 4rem 0;
+  padding: 4rem 1.5rem;
   filter: grayscale(100);
   justify-content: center;
   border-top: 1.5px solid grey;
   border-bottom: 1.5px solid red;
+}
+@media only screen and (max-width: 767px) {
+  .aboutme {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .aboutme .bio > h1 {
+    text-align: center;
+  }
 }
 
 .bio p {
@@ -55,6 +64,13 @@ body li {
   display: flex;
   margin-top: 20px;
   gap: 100px;
+}
+@media only screen and (max-width: 767px) {
+  .stats {
+    gap: 30px;
+    margin-top: 40px;
+    justify-content: space-evenly;
+  }
 }
 .stats .count {
   font-weight: bold;
@@ -112,11 +128,19 @@ header {
   background-color: rgb(143, 148, 168);
   height: 600px;
 }
+@media only screen and (max-width: 767px) {
+  header {
+    height: fit-content;
+    padding: 4rem 3px;
+  }
+}
 header .logo {
-  width: 500px;
+  width: 80%;
+  margin: 0 auto;
 }
 header .logo img {
-  width: 500px;
+  width: 90%;
+  margin: 0 auto;
 }
 header .skills {
   margin: 20px 0;
@@ -124,6 +148,14 @@ header .skills {
   gap: 20px;
   font-weight: bold;
   letter-spacing: 2px;
+  padding: 1rem 2rem;
+}
+@media only screen and (max-width: 767px) {
+  header .skills {
+    gap: 15px;
+    font-size: 8.7px;
+    justify-content: space-between;
+  }
 }
 header ul {
   display: flex;
@@ -132,6 +164,17 @@ header ul {
 }
 header ul a {
   color: black;
+}
+@media only screen and (max-width: 767px) {
+  header ul {
+    gap: 15px;
+  }
+  header ul a {
+    font-size: 12px;
+  }
+  header ul .color-w {
+    color: black;
+  }
 }
 header .color-w {
   color: white;
@@ -192,7 +235,7 @@ header .color-w {
 .tabs {
   display: flex;
   margin-top: 20px;
-  padding: 20px 50px;
+  padding: 20px 15px;
   margin-bottom: 20px;
   justify-content: space-between;
 }
@@ -206,11 +249,29 @@ header .color-w {
 .tabs .tab:active {
   border-bottom: 1px solid red;
 }
+@media only screen and (max-width: 767px) {
+  .tabs {
+    padding: 10px 15px;
+    gap: 15px;
+    font-size: 12px;
+  }
+  .tabs .tab {
+    padding: 0 15px 10px;
+  }
+}
 
 .port-imgs {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
+}
+@media only screen and (max-width: 767px) {
+  .port-imgs {
+    flex-direction: column;
+  }
+  .port-imgs .img-1, .port-imgs .img-grp2 {
+    max-width: 100% !important;
+  }
 }
 .port-imgs .img-1 {
   max-width: 30%;
@@ -398,6 +459,14 @@ footer .socials {
   border-radius: 5px;
   background-color: whitesmoke;
   color: black;
+}
+@media only screen and (max-width: 767px) {
+  .review-wrapper {
+    flex-direction: column;
+  }
+  .review-wrapper .left-arrow-btn, .review-wrapper .right-arrow-btn {
+    display: none;
+  }
 }
 .review-wrapper h2 {
   font-size: medium;
