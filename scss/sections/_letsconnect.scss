@@ -1,10 +1,11 @@
-@use '../rulesets/mixins' as *;
+@use '../rulesets/' as *;
 
 .connect{
     background-color: rgba(128, 128, 128, 0.253);
-    padding: 10rem 2rem;
+    padding: 10rem 1rem;
     justify-content: center;
     @include connect-bg;
+    text-align: center;
     
 }
 
@@ -14,17 +15,24 @@
     flex-direction: column;
     width: 300px;
     background-color: rgba(255, 255, 255, 0.445);
-    padding: 3rem;
+    padding: 3rem 2rem;
     gap: 20px;
     border-radius: 10px;
+
+    @include devices (mobile) {
+        width: 90% !important;
+        padding: 5rem 1.5rem;
+        gap: 30px;
+    }
+
     h1{
         margin: 0;
     }
 
 
         button {
-            width: 100px;
-            height: 35px;
+            width: 70%;
+            height: 50px;
             border-radius: 10px;
             background-color: black;
             color: white;
@@ -39,7 +47,13 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+
+        @include devices (mobile) {
+            gap: 30px;
+
+        }
         input{
+            height: 50px;
             padding: 4px 10px;
             &::placeholder {
                 color: black;

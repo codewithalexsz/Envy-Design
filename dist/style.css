@@ -182,13 +182,14 @@ header .color-w {
 
 .connect {
   background-color: rgba(128, 128, 128, 0.253);
-  padding: 10rem 2rem;
+  padding: 10rem 1rem;
   justify-content: center;
   background-image: url(/images/assets/Rectangle\ 9-\ lets\ connect.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-blend-mode: lighten;
+  text-align: center;
 }
 
 .form-wrapper {
@@ -197,16 +198,23 @@ header .color-w {
   flex-direction: column;
   width: 300px;
   background-color: rgba(255, 255, 255, 0.445);
-  padding: 3rem;
+  padding: 3rem 2rem;
   gap: 20px;
   border-radius: 10px;
+}
+@media only screen and (max-width: 767px) {
+  .form-wrapper {
+    width: 90% !important;
+    padding: 5rem 1.5rem;
+    gap: 30px;
+  }
 }
 .form-wrapper h1 {
   margin: 0;
 }
 .form-wrapper button {
-  width: 100px;
-  height: 35px;
+  width: 70%;
+  height: 50px;
   border-radius: 10px;
   background-color: black;
   color: white;
@@ -218,7 +226,13 @@ header .color-w {
   flex-direction: column;
   gap: 15px;
 }
+@media only screen and (max-width: 767px) {
+  .form-wrapper .inputs-fields {
+    gap: 30px;
+  }
+}
 .form-wrapper .inputs-fields input {
+  height: 50px;
   padding: 4px 10px;
 }
 .form-wrapper .inputs-fields input::placeholder {
