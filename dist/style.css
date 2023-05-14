@@ -476,7 +476,7 @@ footer .socials {
 }
 @media only screen and (max-width: 767px) {
   .rev-block .left-arrow-btn .left-arrow-btn, .rev-block .left-arrow-btn .right-arrow-btn, .rev-block .right-arrow-btn .left-arrow-btn, .rev-block .right-arrow-btn .right-arrow-btn {
-    display: none;
+    display: none !important;
     overflow: hidden;
   }
 }
