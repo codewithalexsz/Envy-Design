@@ -28,7 +28,11 @@
         padding: 15px;
         border-radius: 70%;
         @include devices (mobile) {
-            .left-arrow-btn, .right-arrow-btn {
+            .left-arrow-btn{
+                display: none !important;
+                overflow: hidden;
+            }
+            .right-arrow-btn {
                 display: none !important;
                 overflow: hidden;
             }
