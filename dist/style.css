@@ -339,6 +339,14 @@ header .color-w {
   padding: 6rem 2rem;
   border-top: 1px solid gray;
 }
+@media only screen and (max-width: 767px) {
+  .services h1 {
+    text-align: center;
+  }
+  .services p {
+    text-align: center;
+  }
+}
 .services h3 {
   margin: 0 auto;
 }
@@ -349,7 +357,8 @@ header .color-w {
 }
 .services .pricing {
   outline: 0.5px solid white;
-  width: 200px;
+  width: 250px;
+  padding: 10px 20px;
   text-align: center;
   margin: 50px auto;
 }
@@ -388,8 +397,9 @@ header .color-w {
 }
 
 .book-now {
-  padding: 10px 20px;
+  padding: 10px 0px;
   margin-top: 15px;
+  width: 95%;
   background-color: transparent;
   color: white;
   border-radius: 15px;
@@ -466,6 +476,7 @@ footer .socials {
   }
   .review-wrapper .left-arrow-btn, .review-wrapper .right-arrow-btn {
     display: none;
+    overflow: hidden;
   }
 }
 .review-wrapper h2 {

@@ -43,6 +43,7 @@
         flex-direction: column;
         .left-arrow-btn, .right-arrow-btn {
             display: none;
+            overflow: hidden;
         }
     }
     h2 {

@@ -1,9 +1,22 @@
+@use '../rulesets/' as *;
+
+
 
 .services {
     color: white;
     background-color: black;
     padding: 6rem 2rem;
     border-top: 1px solid gray;
+
+    @include devices (mobile) {
+        h1 {
+            // margin: 010px auto;
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+    }
 h3{
     margin: 0 auto;
 }
@@ -14,7 +27,8 @@ h3{
     }
     .pricing {
         outline: 0.5px solid white;
-        width: 200px;
+        width: 250px;
+        padding: 10px 20px;
         text-align: center;
         margin: 50px auto;
     }
@@ -58,8 +72,9 @@ h3{
 }
 
 .book-now{
-    padding: 10px 20px;
+    padding: 10px 0px;
     margin-top: 15px;
+    width: 95%;
     background-color: transparent;
     color: white;
     border-radius: 15px;
