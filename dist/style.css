@@ -467,6 +467,7 @@ footer .socials {
   gap: 70px;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .rev-block .left-arrow-btn, .rev-block .right-arrow-btn {
   cursor: pointer;
