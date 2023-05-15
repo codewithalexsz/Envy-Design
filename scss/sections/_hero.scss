@@ -37,7 +37,7 @@ header {
 
         @include devices (mobile) {
             gap: 15px;
-            font-size: 8.7px;
+            font-size: 10px;
             
             justify-content: space-between;
         }
@@ -51,9 +51,9 @@ header {
             color: black;
         }
         @include devices (mobile) {
-            gap: 15px; 
+            gap: 20px; 
             a {
-                font-size: 12px;
+                font-size: 16px;
                 
             }
             .color-w{

@@ -7,6 +7,14 @@
     background-color: black;
     padding: 6rem 2rem;
     border-top: 1px solid gray;
+    h1 {
+        // margin: 010px auto;
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+
 
     @include devices (mobile) {
         h1 {
